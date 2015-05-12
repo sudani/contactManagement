@@ -39,7 +39,7 @@ namespace ContactManagement.Controllers
             }
         }
 
-        //login gggggg
+        //login gg
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
