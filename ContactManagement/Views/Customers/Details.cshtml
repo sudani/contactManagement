@@ -1,0 +1,90 @@
+﻿@model ContactManagement.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cust_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cust_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Addres1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Addres1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cust_street)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cust_street)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Post_code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Post_code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cust_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cust_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cust_tel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cust_tel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cust_business)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cust_business)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.custId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
